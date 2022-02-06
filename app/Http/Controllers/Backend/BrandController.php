@@ -40,7 +40,7 @@ class BrandController extends Controller
         ]);
 
         $notification = array(
-            'message' => 'Brand Inserted Successfully',
+            'message' => 'Brand Added Successfully',
             'alert-type' => 'success'
         );
         return redirect()->back()->with($notification);
@@ -87,7 +87,7 @@ class BrandController extends Controller
 
             $notification = array(
                 'message' => 'Brand Updated Successfully',
-                'alert-type' => 'info'
+                'alert-type' => 'success'
             );
             return redirect()->route('all.brand')->with($notification);
         } //end of else section
